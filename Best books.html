@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Best Books of 2023</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: beige;">BEST BOOKS OF 2023</h1>
+    <button id="darkModeToggle" class="btn btn-secondary mb-4">Toggle Dark Mode</button>
+    <p style="color: beige;">Here is a list of five best books of 2023</p>
+    <div class="cons">
+        <div id="N1" class="book-card" onclick="showModal('N1')">
+            <h3>My Murder</h3>
+            <p style="text-indent: 150px;">- Katie Williams</p>
+            <img src="https://m.media-amazon.com/images/I/81rtLd2TvNL._AC_UF1000,1000_QL80_.jpg" class="img">
+            <p style="padding-top: 20px;">Click to see description</p>
+        </div>
+        <div id="N2" class="book-card" onclick="showModal('N2')">
+            <h3>Biography of X</h3>
+            <p style="text-indent: 150px;">- Catherine Lacey</p>
+            <img src="https://m.media-amazon.com/images/I/A1GfAsYaYDL._AC_UF1000,1000_QL80_.jpg" class="img">
+            <p style="padding-top: 20px;">Click to see description</p>
+        </div>
+        <div id="N3" class="book-card" onclick="showModal('N3')">
+            <h3>Emergency: Stories</h3>
+            <p style="text-indent: 140px;">- Kathleen Alcott</p>
+            <img src="https://m.media-amazon.com/images/I/61T74EkQoJL._AC_UF1000,1000_QL80_.jpg" class="img">
+            <p style="padding-top: 20px;">Click to see description</p>
+        </div>
+    </div>
+    <div class="cons">
+        <div id="N4" class="book-card" onclick="showModal('N4')">
+            <h3>The Bee Sting</h3>
+            <p style="text-indent: 140px;">- Paul Murray</p>
+            <img src="https://m.media-amazon.com/images/I/71y5RG8XkTL._AC_UF1000,1000_QL80_.jpg" class="img">
+            <p style="padding-top: 20px;">Click to see description</p>
+        </div>
+        <div id="N5" class="book-card" onclick="showModal('N5')">
+            <h3>Day</h3>
+            <p style="text-indent: 130px;">- Michael Cunningham</p>
+            <img src="https://m.media-amazon.com/images/I/81JrUiHIWQL._AC_UF1000,1000_QL80_.jpg" class="img">
+            <p style="padding-top: 20px;">Click to see description</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="bookModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="bookModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookModalLabel">Book Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
